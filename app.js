@@ -34,6 +34,8 @@ var double_result_1 = ''
 var double_result_2 = ''
 var single_result = ''
 
+// Disable
+single_pick.disabled = true;
 single_pick.addEventListener('click', function() {
     var picked = ''
     while (picked === '' || picked === double_result_1 || picked === double_result_2) {
@@ -47,6 +49,8 @@ single_pick.addEventListener('click', function() {
     result.textContent = single_result;
 });
 
+// Disable
+double_pick.disabled = true;
 double_pick.addEventListener('click', function() {
     const index = getRandomInt(DOUBLES_LIST.length);
     var picked = DOUBLES_LIST[index];
@@ -60,4 +64,4 @@ double_pick.addEventListener('click', function() {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-  }
+}
