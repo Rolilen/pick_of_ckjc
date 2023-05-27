@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Picker</title>
+  <style>
+    * {
+        color: #ffffff;
+        font-family: '微軟正黑體';
+    }
+    body {
+        background-color: black;
+    }
+
+    .button, .event-button {
+        color: #000000;
+        background-color: #bfbfbf;
+        height: 25px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    .button:hover, .event-button:hover {
+        background-color: #bfbfbfaf;
+    }
+
+    .button:active, .event-button:active {
+        background-color: #bfbfbf7f;
+    }
+  </style>
+</head>
+<body>
+    <h1>抽抽</h1>
+    
+    <fieldset style="width: 500px; font-size: 32px;">
+        <legend style="font-weight:bold;">單人賽</legend>
+        <div>Pick: <span id="single_result">銀河棒球俠</span></div>
+    </fieldset>
+
+    <hr width="80%" style="margin-left: 0px; margin-top: 30px;margin-bottom: 20px;">
+
+    <fieldset style="width: 500px; height: 90px; font-size: 32px;">
+        <legend style="font-weight:bold;">雙人賽</legend>
+        <div>Pick: <span id="double_result">大頭＆LC</span></div>
+    </fieldset>
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
